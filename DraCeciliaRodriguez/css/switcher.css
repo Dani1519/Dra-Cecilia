@@ -1,0 +1,27 @@
+/* ==========================
+   Menú superior para cambiar entre versiones (compartido)
+   ========================== */
+:root { --switcher-h: 44px; }
+
+.switcher {
+  position: fixed; top: 0; left: 0; right: 0; z-index: 500;
+  height: var(--switcher-h);
+  display: flex; align-items: center; justify-content: center; gap: .5rem;
+  background: #111418;
+  border-bottom: 1px solid rgba(255, 255, 255, .08);
+  font-family: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+.switcher a {
+  padding: .4em 1.1em;
+  border-radius: 999px;
+  border: 1px solid rgba(255, 255, 255, .18);
+  color: #c9d1dc;
+  font-size: .85rem; font-weight: 500;
+  text-decoration: none;
+  transition: background .2s, color .2s, border-color .2s;
+}
+.switcher a:hover { color: #fff; border-color: rgba(255, 255, 255, .45); }
+.switcher a[aria-current="page"] { background: #fff; color: #111418; border-color: #fff; }
+
+/* Desplaza el contenido para dejar espacio al menú */
+body { padding-top: var(--switcher-h); }

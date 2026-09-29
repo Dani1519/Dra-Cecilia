@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <title>Dra. Cecilia Rodríguez Tejada | Odontología de Alta Tecnología en Cuerámaro</title>
+  <meta name="description" content="Consultorio dental de la Dra. Cecilia Rodríguez Tejada en Cuerámaro, Gto.: odontología integral, ortodoncia, endodoncia, prótesis e implantología con tecnología de última generación.">
+  <meta name="theme-color" content="#05080f">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles2.css">
+  <link rel="stylesheet" href="css/switcher.css">
+  <link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+</head>
+<body>
+
+  <!-- Menú para cambiar de versión -->
+  <nav class="switcher" aria-label="Versiones de la página">
+    <a href="index.html">Opción 1</a>
+    <a href="index2.html" aria-current="page">Opción 2</a>
+    <a href="index3.html">Opción 3</a>
+  </nav>
+
+  <!-- Íconos reutilizables -->
+  <svg width="0" height="0" style="position:absolute" aria-hidden="true">
+    <defs>
+      <symbol id="i-tooth" viewBox="0 0 24 24"><path d="M7.5 3C4.9 3 3.5 5 3.5 7.8c0 2.4 1 3.8 1.5 6.3.5 2.6.9 6.9 2.5 6.9s1.8-3 2.3-5c.3-1.3.9-1.6 1.7-1.6h1c.8 0 1.4.3 1.7 1.6.5 2 .7 5 2.3 5s2-4.3 2.5-6.9c.5-2.5 1.5-3.9 1.5-6.3C20.5 5 19.1 3 16.5 3c-1.9 0-2.8 1-4.5 1S9.4 3 7.5 3z"/></symbol>
+      <symbol id="i-smile" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M8 14.5c1 1.3 2.4 2 4 2s3-.7 4-2"/><path d="M7 11h10"/><path d="M9.5 11v2M12 11v2.5M14.5 11v2"/></symbol>
+      <symbol id="i-root" viewBox="0 0 24 24"><path d="M7.5 3C4.9 3 3.5 5 3.5 7.8c0 2.4 1 3.8 1.5 6.3.5 2.6.9 6.9 2.5 6.9s1.8-3 2.3-5c.3-1.3.9-1.6 1.7-1.6h1c.8 0 1.4.3 1.7 1.6.5 2 .7 5 2.3 5s2-4.3 2.5-6.9c.5-2.5 1.5-3.9 1.5-6.3C20.5 5 19.1 3 16.5 3c-1.9 0-2.8 1-4.5 1S9.4 3 7.5 3z"/><path d="M10 8v5M14 8v5"/></symbol>
+      <symbol id="i-crown" viewBox="0 0 24 24"><path d="M3 8l4.5 4L12 5l4.5 7L21 8l-2 11H5z"/><path d="M5 19h14"/></symbol>
+      <symbol id="i-implant" viewBox="0 0 24 24"><path d="M8 3h8c1.5 0 2.5 1 2.5 2.5S17.5 8 16 8H8C6.5 8 5.5 7 5.5 5.5S6.5 3 8 3z"/><path d="M9 8v2.5h6V8"/><path d="M9 12h6M9.5 14.5h5M10 17h4M11 19.5h2"/><path d="M9 10.5L11 21h2l2-10.5"/></symbol>
+      <symbol id="i-sparkle" viewBox="0 0 24 24"><path d="M12 3l2 5.5L19.5 10 14 12l-2 5.5L10 12 4.5 10 10 8.5z"/><path d="M19 16l.8 2.2L22 19l-2.2.8L19 22l-.8-2.2L16 19l2.2-.8z"/></symbol>
+      <symbol id="i-scan" viewBox="0 0 24 24"><path d="M3 7V4h3M18 4h3v3M21 17v3h-3M6 20H3v-3"/><rect x="7" y="7" width="10" height="10" rx="2"/></symbol>
+      <symbol id="i-shield" viewBox="0 0 24 24"><path d="M12 3l8 3v6c0 4.5-3.4 8.2-8 9-4.6-.8-8-4.5-8-9V6z"/><path d="M8.5 12l2.5 2.5 4.5-5"/></symbol>
+      <symbol id="i-clock" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></symbol>
+      <symbol id="i-heart" viewBox="0 0 24 24"><path d="M12 20s-7.5-4.6-7.5-10A4.3 4.3 0 0 1 12 7.3 4.3 4.3 0 0 1 19.5 10c0 5.4-7.5 10-7.5 10z"/></symbol>
+      <symbol id="i-cpu" viewBox="0 0 24 24"><rect x="6" y="6" width="12" height="12" rx="2"/><rect x="9.5" y="9.5" width="5" height="5" rx="1"/><path d="M9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+      <symbol id="i-pin" viewBox="0 0 24 24"><path d="M12 21s-7-6.2-7-11.5A7 7 0 0 1 19 9.5C19 14.8 12 21 12 21z"/><circle cx="12" cy="9.5" r="2.5"/></symbol>
+      <symbol id="i-phone" viewBox="0 0 24 24"><path d="M5 3.5h3.5l1.5 4.5-2.2 1.3a11 11 0 0 0 6.9 6.9L16 14l4.5 1.5V19a1.5 1.5 0 0 1-1.5 1.5A15.5 15.5 0 0 1 3.5 5 1.5 1.5 0 0 1 5 3.5z"/></symbol>
+      <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+      <symbol id="i-whatsapp" viewBox="0 0 24 24"><path d="M4 20l1.2-4.2A8.5 8.5 0 1 1 8.4 19z"/><path d="M9 8.5c0 3.5 3 6.5 6.5 6.5l1-1.5-2-1-1 1c-1.2-.5-2.3-1.6-2.8-2.8l1-1-1-2-1.5 1z"/></symbol>
+      <clipPath id="toothClip" clipPathUnits="userSpaceOnUse">
+        <path d="M7.5 3C4.9 3 3.5 5 3.5 7.8c0 2.4 1 3.8 1.5 6.3.5 2.6.9 6.9 2.5 6.9s1.8-3 2.3-5c.3-1.3.9-1.6 1.7-1.6h1c.8 0 1.4.3 1.7 1.6.5 2 .7 5 2.3 5s2-4.3 2.5-6.9c.5-2.5 1.5-3.9 1.5-6.3C20.5 5 19.1 3 16.5 3c-1.9 0-2.8 1-4.5 1S9.4 3 7.5 3z"/>
+      </clipPath>
+      <linearGradient id="gradStroke" x1="0" y1="0" x2="1" y2="1">
+        <stop offset="0" stop-color="#2de2d0"/>
+        <stop offset="1" stop-color="#7c8cff"/>
+      </linearGradient>
+    </defs>
+  </svg>
+
+  <div class="progress" id="progress"></div>
+  <div class="bg-grid" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--1" aria-hidden="true"></div>
+  <div class="bg-glow bg-glow--2" aria-hidden="true"></div>
+
+  <!-- Encabezado -->
+  <header class="header" id="header">
+    <div class="container header__inner">
+      <a href="#inicio" class="logo">
+        <span class="logo__mark"><svg class="icon"><use href="#i-tooth"/></svg></span>
+        <span class="logo__text">
+          <strong>Dra. Cecilia Rodríguez</strong>
+          <small>DENTAL · TECH</small>
+        </span>
+      </a>
+      <button class="nav-toggle" id="navToggle" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+      <nav class="nav" id="nav">
+        <a href="#servicios">Servicios</a>
+        <a href="#tecnologia">Tecnología</a>
+        <a href="#doctora">La doctora</a>
+        <a href="#visita">Proceso</a>
+        <a href="#contacto" class="btn btn--small">Agendar cita</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero" id="inicio">
+      <canvas class="hero__canvas" id="particles" aria-hidden="true"></canvas>
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="chip"><span class="chip__dot"></span> Agenda abierta · Lunes a domingo</p>
+          <h1>Odontología de <span class="gradient-text">precisión digital</span> para tu sonrisa</h1>
+          <p class="lead">Consultorio de la Dra. Cecilia Rodríguez Tejada en Cuerámaro. Odontología integral y especialidades con herramientas de última tecnología, en un solo lugar.</p>
+          <div class="hero__actions">
+            <a href="#contacto" class="btn">Agendar cita <svg class="icon"><use href="#i-arrow"/></svg></a>
+            <a href="https://wa.me/524621250307" class="btn btn--ghost" target="_blank" rel="noopener"><svg class="icon"><use href="#i-whatsapp"/></svg> WhatsApp</a>
+          </div>
+          <ul class="hero__specs mono">
+            <li><span>01</span> Ortodoncia</li>
+            <li><span>02</span> Endodoncia</li>
+            <li><span>03</span> Prótesis</li>
+            <li><span>04</span> Implantología</li>
+          </ul>
+        </div>
+
+        <!-- Panel de escaneo -->
+        <div class="scanner" id="scanner">
+          <div class="scanner__corners" aria-hidden="true"><i></i><i></i><i></i><i></i></div>
+          <div class="scanner__head mono">
+            <span><span class="chip__dot"></span> ESCANEO DIGITAL</span>
+            <span>MODO 3D</span>
+          </div>
+          <svg class="scanner__tooth" viewBox="0 0 24 24" aria-hidden="true">
+            <g clip-path="url(#toothClip)" class="scanner__mesh">
+              <path d="M0 4h24M0 6h24M0 8h24M0 10h24M0 12h24M0 14h24M0 16h24M0 18h24M0 20h24"/>
+              <path d="M4 0v24M6 0v24M8 0v24M10 0v24M12 0v24M14 0v24M16 0v24M18 0v24M20 0v24"/>
+            </g>
+            <use href="#i-tooth" class="scanner__outline"/>
+          </svg>
+          <div class="scanner__line" aria-hidden="true"></div>
+          <div class="scanner__foot mono">
+            <div><small>Diagnóstico</small><strong>Preciso</strong></div>
+            <div><small>Procedimiento</small><strong>Mínimamente invasivo</strong></div>
+            <div><small>Bioseguridad</small><strong>Esterilización total</strong></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Cinta de especialidades -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__track mono">
+        <span>Odontología integral</span><span>✦</span><span>Ortodoncia</span><span>✦</span><span>Endodoncia</span><span>✦</span><span>Prótesis dental</span><span>✦</span><span>Implantología</span><span>✦</span><span>Tecnología de última generación</span><span>✦</span>
+        <span>Odontología integral</span><span>✦</span><span>Ortodoncia</span><span>✦</span><span>Endodoncia</span><span>✦</span><span>Prótesis dental</span><span>✦</span><span>Implantología</span><span>✦</span><span>Tecnología de última generación</span><span>✦</span>
+      </div>
+    </div>
+
+    <!-- Servicios -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow mono">// Servicios</p>
+          <h2>Tratamientos para cada etapa de tu sonrisa</h2>
+          <p>Diagnóstico, prevención y tratamiento especializado sin tener que acudir a distintos consultorios.</p>
+        </div>
+        <div class="grid grid--3">
+          <article class="card glow">
+            <div class="card__top"><div class="card__icon"><svg class="icon"><use href="#i-tooth"/></svg></div><span class="card__num mono">01</span></div>
+            <h3>Odontología integral</h3>
+            <p>Valoración completa de tu boca y un plan de tratamiento que atiende cada necesidad de forma coordinada.</p>
+          </article>
+          <article class="card glow">
+            <div class="card__top"><div class="card__icon"><svg class="icon"><use href="#i-smile"/></svg></div><span class="tag mono">Especialidad</span></div>
+            <h3>Ortodoncia</h3>
+            <p>Corrección de la posición dental y la mordida con brackets o alineadores, para niños, jóvenes y adultos.</p>
+          </article>
+          <article class="card glow">
+            <div class="card__top"><div class="card__icon"><svg class="icon"><use href="#i-root"/></svg></div><span class="tag mono">Especialidad</span></div>
+            <h3>Endodoncia</h3>
+            <p>Tratamiento de conductos para conservar piezas dañadas o infectadas y eliminar el dolor.</p>
+          </article>
+          <article class="card glow">
+            <div class="card__top"><div class="card__icon"><svg class="icon"><use href="#i-crown"/></svg></div><span class="tag mono">Especialidad</span></div>
+            <h3>Prótesis dental</h3>
+            <p>Coronas, puentes y prótesis fijas o removibles que devuelven función y estética a tu sonrisa.</p>
+          </article>
+          <article class="card glow">
+            <div class="card__top"><div class="card__icon"><svg class="icon"><use href="#i-implant"/></svg></div><span class="tag mono">Especialidad</span></div>
+            <h3>Implantología</h3>
+            <p>Reemplazo de dientes perdidos con implantes que se ven, se sienten y funcionan como dientes naturales.</p>
+          </article>
+          <article class="card glow">
+            <div class="card__top"><div class="card__icon"><svg class="icon"><use href="#i-sparkle"/></svg></div><span class="card__num mono">06</span></div>
+            <h3>Odontología general</h3>
+            <p>Consultas, limpiezas, resinas, extracciones, blanqueamiento y atención preventiva para toda la familia.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Tecnología (bento) -->
+    <section class="section" id="tecnologia">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow mono">// Tecnología</p>
+          <h2>Equipo de <span class="gradient-text">última generación</span></h2>
+          <p>Herramientas modernas para diagnósticos más precisos y tratamientos más rápidos, seguros y cómodos.</p>
+        </div>
+        <div class="bento">
+          <div class="bento__item bento__item--wide glow">
+            <svg class="icon icon--lg"><use href="#i-scan"/></svg>
+            <h3>Diagnóstico digital preciso</h3>
+            <p>Detectamos a tiempo y planeamos cada tratamiento con exactitud, para que sepas qué necesitas y por qué.</p>
+            <div class="bars" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div>
+          <div class="bento__item glow">
+            <svg class="icon icon--lg"><use href="#i-cpu"/></svg>
+            <h3>Equipo moderno</h3>
+            <p>Instrumental actualizado para cada especialidad.</p>
+          </div>
+          <div class="bento__item glow">
+            <svg class="icon icon--lg"><use href="#i-heart"/></svg>
+            <h3>Mayor comodidad</h3>
+            <p>Procedimientos menos invasivos y más tranquilos.</p>
+          </div>
+          <div class="bento__item glow">
+            <svg class="icon icon--lg"><use href="#i-clock"/></svg>
+            <h3>Menos citas</h3>
+            <p>Tratamientos eficientes y recuperación más rápida.</p>
+          </div>
+          <div class="bento__item glow">
+            <svg class="icon icon--lg"><use href="#i-shield"/></svg>
+            <h3>Bioseguridad</h3>
+            <p>Estrictos protocolos de esterilización en cada consulta.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- La doctora -->
+    <section class="section" id="doctora">
+      <div class="container split">
+        <div class="portrait">
+          <!-- Reemplaza por una foto de la doctora, p. ej. img/doctora.jpg -->
+          <img src="img/doctora.svg" alt="Dra. Cecilia Rodríguez Tejada" width="560" height="420">
+          <div class="portrait__label mono"><span class="chip__dot"></span> Cirujana dentista</div>
+        </div>
+        <div class="split__text">
+          <p class="eyebrow mono">// La doctora</p>
+          <h2>Dra. Cecilia Rodríguez Tejada</h2>
+          <p class="lead">Odontología integral con especialidad en ortodoncia, endodoncia, prótesis e implantología.</p>
+          <p>Combina la tecnología más actual con un trato cercano: te explica con claridad cada paso de tu tratamiento y cuida tu salud bucal a largo plazo.</p>
+          <ul class="checklist">
+            <li>Atención personalizada en cada consulta</li>
+            <li>Planes de tratamiento claros y sin sorpresas</li>
+            <li>Todas las especialidades en un solo lugar</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Proceso -->
+    <section class="section" id="visita">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow mono">// Tu primera visita</p>
+          <h2>Así de sencillo es empezar</h2>
+        </div>
+        <ol class="steps">
+          <li class="step glow"><span class="step__num mono">01</span><h3>Agenda tu cita</h3><p>Llámanos o escríbenos por WhatsApp, o usa el formulario.</p></li>
+          <li class="step glow"><span class="step__num mono">02</span><h3>Valoración</h3><p>Revisamos tu salud bucal y escuchamos lo que necesitas.</p></li>
+          <li class="step glow"><span class="step__num mono">03</span><h3>Plan de tratamiento</h3><p>Te explicamos opciones, tiempos y costos antes de iniciar.</p></li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section class="section" id="contacto">
+      <div class="container">
+        <div class="section__header">
+          <p class="eyebrow mono">// Contacto</p>
+          <h2>Agenda tu cita</h2>
+          <p>Escríbenos por WhatsApp o llámanos. Te respondemos a la brevedad.</p>
+        </div>
+        <div class="contact">
+          <div class="contact__info">
+            <a class="contact-card glow" href="tel:+524621250307">
+              <svg class="icon icon--lg"><use href="#i-phone"/></svg>
+              <div><span class="mono">Teléfono</span><strong>462 125 0307</strong></div>
+            </a>
+            <a class="contact-card glow" href="https://wa.me/524621250307" target="_blank" rel="noopener">
+              <svg class="icon icon--lg"><use href="#i-whatsapp"/></svg>
+              <div><span class="mono">WhatsApp</span><strong>462 125 0307</strong></div>
+            </a>
+            <a class="contact-card glow" href="https://maps.google.com/?cid=9035574526727270491" target="_blank" rel="noopener">
+              <svg class="icon icon--lg"><use href="#i-pin"/></svg>
+              <div><span class="mono">Dirección</span><strong>Calle 16 de Septiembre #204, Zona Centro, 36960 Cuerámaro, Gto.</strong></div>
+            </a>
+            <div class="contact-card glow">
+              <svg class="icon icon--lg"><use href="#i-clock"/></svg>
+              <div><span class="mono">Horario</span><strong>Lun a Vie 9:00 – 18:00 · Sáb y Dom 9:00 – 15:00</strong></div>
+            </div>
+          </div>
+          <!-- El formulario abre WhatsApp con el mensaje ya redactado (no requiere servidor) -->
+          <form class="form glow" id="contactForm" novalidate>
+            <h3>Solicita tu cita</h3>
+            <p class="form__note">Llena tus datos y te enviaremos a WhatsApp con tu mensaje listo.</p>
+            <label>Nombre completo
+              <input type="text" name="nombre" required>
+            </label>
+            <label>Motivo de la consulta
+              <textarea name="mensaje" rows="4" required placeholder="Ej. limpieza, dolor de muela, valoración de ortodoncia…"></textarea>
+            </label>
+            <button type="submit" class="btn"><svg class="icon"><use href="#i-whatsapp"/></svg> Enviar por WhatsApp</button>
+            <p class="form__status" id="formStatus" role="status"></p>
+          </form>
+        </div>
+        <div class="map">
+          <iframe title="Ubicación del consultorio" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+            src="https://maps.google.com/maps?q=20.6257569,-101.6734049&z=17&output=embed"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Pie de página -->
+  <footer class="footer">
+    <div class="container footer__grid">
+      <div>
+        <a href="#inicio" class="logo">
+          <span class="logo__mark"><svg class="icon"><use href="#i-tooth"/></svg></span>
+          <span class="logo__text"><strong>Dra. Cecilia Rodríguez</strong><small>DENTAL · TECH</small></span>
+        </a>
+        <p>Odontología integral y de especialidad con tecnología de última generación.</p>
+      </div>
+      <div>
+        <h4 class="mono">Servicios</h4>
+        <ul>
+          <li>Odontología integral</li>
+          <li>Ortodoncia</li>
+          <li>Endodoncia</li>
+          <li>Prótesis e implantes</li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="mono">Contacto</h4>
+        <ul>
+          <li>Calle 16 de Septiembre #204, Zona Centro</li>
+          <li>36960 Cuerámaro, Gto.</li>
+          <li><a href="tel:+524621250307">462 125 0307</a></li>
+          <li>Lun a Vie 9:00 – 18:00</li>
+          <li>Sáb y Dom 9:00 – 15:00</li>
+        </ul>
+      </div>
+    </div>
+    <div class="container footer__bottom mono">
+      <p>&copy; <span id="year"></span> Dra. Cecilia Rodríguez Tejada</p>
+      <a href="https://wa.me/524621250307" target="_blank" rel="noopener">WhatsApp: 462 125 0307</a>
+    </div>
+  </footer>
+
+  <!-- Botón flotante de WhatsApp -->
+  <a class="wa-float" href="https://wa.me/524621250307" target="_blank" rel="noopener" aria-label="Escríbenos por WhatsApp">
+    <svg class="icon"><use href="#i-whatsapp"/></svg>
+  </a>
+
+  <script src="js/main2.js"></script>
+</body>
+</html>
