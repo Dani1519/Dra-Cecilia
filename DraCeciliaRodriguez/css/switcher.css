@@ -25,3 +25,8 @@
 
 /* Desplaza el contenido para dejar espacio al menú */
 body { padding-top: var(--switcher-h); }
+
+@media (max-width: 480px) {
+  .switcher { gap: .3rem; padding-inline: 8px; }
+  .switcher a { padding: .35em .75em; font-size: .78rem; white-space: nowrap; }
+}
